@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora de Equação do 2º Grau</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Calcular Equação do 2º Grau</h1>
+      <div class="terms-of-equation">
+        <label for="variable-a" class="sr-only">Insira o termo "a" da equação</label>
+        <input id="variable-a" type="number" placeholder="a">
+        <span>x²</span>
+        <label for="variable-b" class="sr-only">Insira o termo "b" da equação</label>
+        <input id="variable-b" type="number" placeholder="b">
+        <span>x</span>
+        <label for="variable-c" class="sr-only">Insira o termo "c" da equação</label>
+        <input id="variable-c" type="number" placeholder="c">
+        <span>= 0</span>
+        <button type="submit" id="calculate">Calcular</button>
+      </div>
+
+      <div id="equation-results">
+        <span id="delta">Valor de delta: <span id="delta-value"></span></span>
+        <span id="conditions-of-delta"></span>
+        <span id="roots-of-equation"></span>
+      </div>
+      <span id="credits">by <a target="_blank" href="https://github.com/jeremarques">Jeremias Marques</a></span>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
